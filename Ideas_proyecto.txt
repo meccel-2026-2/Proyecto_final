@@ -1,4 +1,5 @@
 - Crear rutina para obtener los vectores de posicion con respecto a la tierra
 - Gráficar Tierra - Luna -Apophis (Con respecto a la tierra)
 - ¿Como se planea alcanzar a apophis en la mision de EXlab?
-- 
+- 428603.64
+- 429202.66
