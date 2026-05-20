@@ -12,3 +12,17 @@
 - https://pymcel.readthedocs.io/es/latest/pymcel.html#pymcel.solucion_lambert devuelve 
 velocidades iniciales y finales para que un satelite salga de un punto A  un punto B en t tiempo.
 - Hacer el analisis con 2 cuerpos (YAAAAAA) - listo.
+
+
+Que me falta en el proyecto??
+- me falta analizar el cambio de el vector h en el tiempo con la teoria de los 2 cuerpos y de JPL
+- como cambia la inclinacion de apophis con respecto a la ecliptica.
+- Probar la funcion del profe para explorar una posible mision.
+- aplicar la teoria de los 3 cuerpos en apophis.
+- ver en que region se verá apophis (Astroposicion).
+
+Cosas a mejorar:
+- la presentacion (Urgente).
+- no me dio una rotacion de la conica por lo que debo de ver porque se da esto
+- 
+
