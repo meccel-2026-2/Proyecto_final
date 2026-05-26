@@ -177,6 +177,7 @@ def animacion_2d_tierra_apophis(
   fecha_inicial=None,
   ts=None,
   utc_offset_horas=-5,
+  max_frames=900,
 ):
   """Anima trayectorias 2D baricentricas y relativas Tierra-Apophis.
 
@@ -199,6 +200,9 @@ def animacion_2d_tierra_apophis(
       Arreglo de tiempos en anos asociado a cada frame. Debe tener largo n_t.
   utc_offset_horas : float, opcional
       Offset horario adicional a mostrar (por defecto UTC-5).
+    max_frames : int, opcional
+      Maximo de frames que se usaran en la animacion. Si la serie temporal
+      es mas larga, se muestrea de forma uniforme para acelerar la generacion.
 
   Retorna
   -------
@@ -226,6 +230,13 @@ def animacion_2d_tierra_apophis(
     if len(ts) != n_t:
       raise ValueError("ts debe tener el mismo numero de frames que rs.shape[1].")
     etiquetas_tiempo = construir_etiquetas_tiempo(fecha_inicial, ts, utc_offset_horas)
+
+  if max_frames is None or max_frames <= 0:
+    frame_indices = np.arange(n_t)
+  elif n_t <= max_frames:
+    frame_indices = np.arange(n_t)
+  else:
+    frame_indices = np.unique(np.linspace(0, n_t - 1, int(max_frames), dtype=int))
 
   tierra_xy = rs[0, :, :2]
   apophis_xy = rs[1, :, :2]
@@ -343,7 +354,7 @@ def animacion_2d_tierra_apophis(
   ani = FuncAnimation(
     fig,
     update,
-    frames=n_t,
+    frames=frame_indices,
     init_func=init,
     interval=intervalo_ms,
     blit=True,
