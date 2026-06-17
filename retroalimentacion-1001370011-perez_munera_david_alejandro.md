@@ -5,7 +5,7 @@
 
 ## Archivos revisados
 
-- proyecto_final.ipynb (entregado)
+- proyecto_final.ipynb (versión final entregada)
 
 ## Historial de commits
 
@@ -30,7 +30,7 @@ Interpretación breve: Ritmo aceptable con evidencia de trabajo distribuido.
 
 ## Retroalimentación
 
-- Archivo revisado: proyecto_final.ipynb
+- Archivo revisado: proyecto_final.ipynb (versión final entregada)
 
 ### Aspectos positivos
 
@@ -39,17 +39,28 @@ Interpretación breve: Ritmo aceptable con evidencia de trabajo distribuido.
 - Hay secciones de metodología/resultados con interpretación de hallazgos.
 - Excelentes gráficos y animaciones especialmente la que tiene la distancia de Apophis a la Tierra.
 - Muy ingeniosa la descripción del movimiento de Apophis en el Radio de Hill.
+- Excelente por el análisis incluído usando el problema de los dos cuerpos.
 
 ### Aspectos por mejorar
 
-- No hay un cálculo usando la teoría del problema de los dos cuerpos. Representar los elementos orbitales como función del tiempo no es aplicar la teoría.
-- No hay ninguna aplicación de la teoría del problema de los tres cuerpos al problema de Apophis.
-- La celda de rutinas usada en el notebook es gigantesca y no hay explicación. Sugiero poner cada rutina en una celda antes de cuando se va a usar por primera vez.
-- La explicación previa al código es parcial; conviene anteceder cada bloque importante con una celda de texto breve.
-- Hay celdas de código muy largas; se recomienda modularizar en funciones y dividir bloques extensos.
-- Se recomienda cerrar con una sección unica de conclusiones (3-5 puntos) que sintetice hallazgos físicos y computacionales y responda directamente al objetivo del proyecto.
+- No hay un cálculo usando la teoría del problema de los dos cuerpos. Representar los elementos orbitales como función del tiempo no es aplicar la teoría. [Mejorado]
+- No hay ninguna aplicación de la teoría del problema de los tres cuerpos al problema de Apophis. [Mejorado]
+- La celda de rutinas usada en el notebook es gigantesca y no hay explicación. Sugiero poner cada rutina en una celda antes de cuando se va a usar por primera vez. [Parcialmente mejorado]
+- La explicación previa al código es parcial; conviene anteceder cada bloque importante con una celda de texto breve. [No mejorado]
+- Hay celdas de código muy largas; se recomienda modularizar en funciones y dividir bloques extensos. [No mejorado]
+- Se recomienda cerrar con una sección unica de conclusiones (3-5 puntos) que sintetice hallazgos físicos y computacionales y responda directamente al objetivo del proyecto. [Mejorado]
 
 ### Valoración global
 
 - Trabajo técnicamente sólido en términos generales, con oportunidades claras de mejora en presentación y calidad de reporte.
 - Estado de recepción: se recibe como fue entregado, con recomendaciones de mejora.
+- El trabajo final está completo y tiene suficientes experimentos numéricos para cumplir los objetivos propuestos.
+
+## Valoración final
+
+- Mejoras implementadas: 2.92 (70%)
+- Aplicación al repositorio: 4.25 (10%)
+- Aspectos positivos: 4.50 (10%)
+- Valoración global: 4.00 (10%)
+
+**Nota final (redondeada)**: 0.7×2.92 + 0.1×4.25 + 0.1×4.50 + 0.1×4.00 = (redondeado) 3.3
